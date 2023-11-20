@@ -9,7 +9,7 @@ export const DataContext = createContext(null);
 function App() {
   const [data,setData]=useState();
   const fetchApi=async()=>{
-    const res= await fetch('http://localhost:5000/api/specializations');
+    const res= await fetch('https://carejarintern.onrender.com/api/specializations');
     const d=await res.json();
     console.log(d);
     setData(d);
